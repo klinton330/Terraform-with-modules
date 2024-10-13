@@ -43,7 +43,7 @@ pipeline {
 
         stage('Apply') {
             steps {
-                bat 'terraform apply -var-file=envs/dev/terraform.tfvars -input=false tfplan'
+                bat 'terraform apply -var-file=envs/dev/terraform.tfvars --auto-approve -input=false tfplan'
             }
         }
     }

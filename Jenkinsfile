@@ -6,10 +6,9 @@ pipeline {
     environment {
         GC_ACCESS_KEY_ID     = credentials('DEV_ACCESS_KEY')
         GC_SECRET_ACCESS_KEY = credentials('DEV_ACCESS_SECRET')
-        GC_REGION=
+        GC_REGION= "ap-northeast-1"
     }
-
-   agent  any
+    agent  any
     stages {
         stage('checkout') {
             steps {

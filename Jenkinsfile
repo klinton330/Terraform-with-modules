@@ -4,8 +4,8 @@ pipeline {
         booleanParam(name: 'autoApprove', defaultValue: false, description: 'Automatically run apply after generating plan?')
     } 
     environment {
-        GC_ACCESS_KEY_ID     = credentials('DEV_ACCESS_KEY')
-        GC_SECRET_ACCESS_KEY = credentials('DEV_ACCESS_SECRET')
+        GC_ACCESS_KEY_ID ="bec9621c-5bc7-400b-87a5-59c6e8bb2eac"
+        GC_SECRET_ACCESS_KEY ="Dp8Q_DS0meoixjBob5doqo54vWaML0ZTL6yhl0wKSn4"
         GC_REGION= "ap-northeast-1"
     }
     agent  any
